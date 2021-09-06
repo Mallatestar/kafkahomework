@@ -1,0 +1,16 @@
+plugins {
+    id 'scala'
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.scala-lang:scala-library:2.12'
+    implementation group: 'org.apache.spark', name: 'spark-sql-kafka-0-10_2.12', version: '3.1.2'
+    implementation group: 'org.apache.spark', name: 'spark-core_2.12', version: '3.1.2'
+    implementation group: 'org.apache.spark', name: 'spark-sql_2.12', version: '3.1.2'
+    implementation group: 'org.apache.hadoop', name: 'hadoop-client', version: '3.3.1'
+}
